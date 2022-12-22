@@ -4,10 +4,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-<<<<<<< HEAD
 int _putchar(char c);
-=======
->>>>>>> fb6ff520694f4b4f72161d4fa2c37ffe951bdb90
 void reset_to_98(int *n);
 void swap_int(int *a, int *b);
 int _strlen(char *s);
