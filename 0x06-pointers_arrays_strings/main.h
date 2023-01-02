@@ -5,10 +5,8 @@
 #include <unistd.h>
 
 void reset_to_98(int *n);
-<<<<<<< HEAD
 void swap_int(int *a, int *b);
-=======
->>>>>>> 717aee8930b6ed47f0f0f355d2a1e9bc7f9de1cc
+
 int _strlen(char *s);
 void _puts(char *str);
 void print_rev(char *s);
