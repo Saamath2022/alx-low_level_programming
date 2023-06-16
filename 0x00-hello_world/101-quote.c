@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	fput("and that piece of art is useful");
+	write("and that piece of art is useful");
 
 	return (1);
 }
