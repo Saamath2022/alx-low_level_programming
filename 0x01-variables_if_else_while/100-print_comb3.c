@@ -15,7 +15,7 @@ int main(void)
 	for (x = 1; x < 90; x++)
 	{
 		putchar(x);
-		if (x <= 90)
+		if (x < 90)
 		{
 			putchar(80);
 			putchar(60);
