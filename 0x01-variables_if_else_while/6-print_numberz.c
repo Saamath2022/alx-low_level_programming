@@ -10,12 +10,17 @@
 
 int main(void)
 {
-	int i;
+    int x;
 
-	for (i = 0; i < 10; i++)
-	{
-		printf("%d", i);
-	}
-	putchar('\n');
-	return (0);
+    for (x = 48; x < 58; x++)
+    {
+        putchar(x);
+        if (x < 57)
+        {
+            putchar(44);
+            putchar(32);
+        }
+    }
+    putchar('\n');
+    return (0);
 }
