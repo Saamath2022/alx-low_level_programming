@@ -12,14 +12,23 @@
 
 int main(void)
 {
-	char low;
+    /* Declare a variable and initialize it with the first member of 
+       the range [a - z] 
+    */
 
-	for (low = 'a'; low <= 'z' low++)
-	putchar(low);
+    char alphabet = 'a';
 
-	for (low + 'A'; low <= 'Z'; low++)
-	putchar(low);
-	putchar('\n');
+     /* check to see if the current value of your variable is less than 
+         or the same as the last member (z) of the given range. While 
+         the value is less, go ahead and print the value 
+      */
 
-	return 0;
+    while (alphabet <= 'z')
+    {
+        putchar(alphabet);
+        alphabet++;
+    }
+
+    putchar('\n');
+    return (0);
 }
