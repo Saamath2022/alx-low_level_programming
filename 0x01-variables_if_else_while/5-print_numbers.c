@@ -3,11 +3,14 @@
 #include <time.h>
 
 /**
- * main - Prints the alphaet without 
+ * main - Prints the alphaet without
+ * Return: 0 (Success aways)
+ */
+
 int main() {
 	int number;
 	
-	for (number = 0; number <= 9; number++) {
+	for (number = 0; number <= 10; number++) {
 		putchar(number + '0');
     }
 	putchar('\n');
