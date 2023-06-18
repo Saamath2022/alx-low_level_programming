@@ -10,14 +10,15 @@
  *
  */
 
-int main() 
-{
-	char lc;
-	for (lc = 'a'; lc <= 'A'; lc ++)
-	{
-		putchar(lc);
-	}
-	putchar ('\n');
+int main() {
+	char low;
 
-	return (0);
+	for (low = 'a'; low <= 'z' low++)
+	putchar(low);
+
+	for (low + 'A'; low <= 'Z'; low++)
+	putchar(low);
+	putchar('\n');
+
+	return 0;
 }
