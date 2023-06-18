@@ -10,17 +10,26 @@
 
 int main(void)
 {
-	int x;
+	int d, p, q;
 
-	for (x = 1; x < 10; x++)
+	for (d = '0'; d < '9'; d++)
 	{
-		putchar(x);
-		if (x < 89)
-		{
-			putchar (58);
-			putchar (45);
-		}
+	for (p =  d + 1; p <= '9'; p++)
+	{
+	for (q = p + 1; q <= '9'; q++)
+	if ((p != d) != q)
+	{
+	putchar (d);
+	putchar (p);
+	putchar(q);
+	if (d == '7' && p == '8')
+	continue;
+	putchar (',');
+	putchar (' ');
 	}
-	putchar('\n');
+	}
+	}
+	putchar ('\n');
+	
 	return (0);
 }
