@@ -3,7 +3,8 @@
 #include <time.h>
 
 /**
- * main - Program that prints all possible differnt combinations of three digits.
+ * main - Program that prints all possible differnt
+ * combinations of three digits.
  * Return: Always 0 (Success).
  */
 
