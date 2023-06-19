@@ -10,16 +10,20 @@
 
 int main(void)
 {
-	int x;
+	int num1;
+	int num2;
 
-	for (x = 0; x < 9; x++)
+
+	for (num1 = 0; num2 < 9; num2++)
 	{
-		putchar(x);
-		if (x < '7')
-		{	putchar (8);
-			putchar (7);
-        	}
-    	}
+		putchar((num1 % 10)+'0');
+		putchar((num2 % 10) + '0');
+
+		if (num1 ==8 && num2 ==9)
+		continue;
+		putchar (',');
+		putchar (' ');
+        }
 	putchar('\n');
 	return (0);
 }
