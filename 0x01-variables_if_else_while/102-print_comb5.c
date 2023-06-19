@@ -5,10 +5,10 @@
 /**
  * main - program that prints all possible combinations
  * of two two-digit numbers.
- * Return 0: Alwssy success.
+ * Return 0: Always(Success).
  */
 
-int main (void)
+int main(void)
 {
 	int i, j;
 
@@ -18,11 +18,11 @@ int main (void)
 		{
 			putchar((i / 10) + '0');
 			putchar((i % 10) + '0');
-			putchar(' '); 
+			putchar(' ');
 			putchar((j / 10) + '0');
 			putchar((j % 10) + '0');
 
-			if (i < 98 || j< 99)
+			if (i < 98 || j < 99)
 			{
 				putchar(',');
 				putchar(' ');
