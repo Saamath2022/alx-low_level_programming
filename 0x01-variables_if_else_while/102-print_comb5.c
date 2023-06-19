@@ -5,7 +5,7 @@
 /**
  * main - program that prints all possible combinations
  * of two two-digit numbers.
- * Return 0: Always(Success).
+ * Return: 0 Always (Success).
  */
 
 int main(void)
