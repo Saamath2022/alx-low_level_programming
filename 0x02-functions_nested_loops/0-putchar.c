@@ -5,7 +5,7 @@
  * Return: 0 Always
  */
 
-int mina(void)
+int main(void)
 {
 
 	_putchar('_');
