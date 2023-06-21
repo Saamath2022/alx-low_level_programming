@@ -6,7 +6,7 @@
  * Returns: 1 for lowercase character 0 for anything else.
  */
 
-int _islower(int c)
+int _islower(int c) // prototype to check whether the character is lower
 {
 	if (c >= 97 && c <= 122)
 	{
