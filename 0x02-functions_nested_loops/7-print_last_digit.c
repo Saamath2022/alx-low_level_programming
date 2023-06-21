@@ -5,14 +5,16 @@
  * Return: value of the last digit
  */
 
-int print_last_digit(int n)
+int print_last_digit(int num)
 {
-	int ld = n % 10;
+	int lastDigit = num % 10;
 
-	if (ld < 0)
-		ld *= -1;
+	if (lastDigit < 0)
+	{	
+		lastDigit = -lastDigit;
+	}
 
-	_putchar(ld + '0');
+	_putchar(lastDigit);
 
-	return (0);
+	return (lastDigit);
 }
