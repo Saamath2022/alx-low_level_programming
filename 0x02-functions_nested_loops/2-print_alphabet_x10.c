@@ -2,14 +2,13 @@
 #include <unistd.h>
 
 /**
- * prints_alphabet_x10-make alphabet x10 times
+ * prints_alphabet_x10 - make alphabet x10 times
  * Return: Always 0 (success)
  */
 
 void print_alphabet_x10(void)
-
 {
-	char c; // Start with lowercase 'a'.
+	char c; 
 	int i = 0;
 
 	while (i <= 9)
