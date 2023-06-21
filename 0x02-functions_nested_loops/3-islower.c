@@ -3,10 +3,10 @@
 /**
  * _islower - Checks for lowercase character
  * @c: The character to be checked
- * Returns: 1 for lowercase character 0 for anything else.
+ * Returns: 1 if c is a letter, lowercase or uppercase.
  */
 
-int _islower(int c) // prototype to check whether the character is lower
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
