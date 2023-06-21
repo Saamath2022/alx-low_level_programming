@@ -2,8 +2,9 @@
 #include <unistd.h>
 
 /**
- * _isalpha - function that checs for alphabetc character
- * Return: 1 if a letter is alphabet otherwise 0.
+ * _isalpha - checks for  alphabets
+ * @c: character to be checked
+ * Return: 1 if character is a letter 0 otherwise.
  */
 
 int _isalpha(int c)
