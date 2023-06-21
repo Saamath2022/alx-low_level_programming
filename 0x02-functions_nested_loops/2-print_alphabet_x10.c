@@ -9,7 +9,7 @@
 void print_alphabet_x10(void)
 
 {
-	char c;
+	char c; // Start with lowercase 'a'.
 	int i = 0;
 
 	while (i <= 9)
