@@ -1,5 +1,4 @@
 #include "main.h"
-#include <unistd.h>
 
 /**
  * prints_alphabet_x10 - make alphabet x10 times
