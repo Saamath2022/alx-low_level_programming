@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * main - prints alphabets 10 times in lowercase
+ * main - prints_alphabets 10 times in lowercase
  * Return: Always 0 (success)
  */
 
@@ -17,7 +17,7 @@ void print_alphabet_x10(void)
 	{
 	_putchar(c);
 	}
-	_putchar ('\n');
+	_putchar('\n');
 	i++;
 	}
 }
