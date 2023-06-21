@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- *checks if the given characters is lowercase
- *@param c The character to check
+ * checks if the given characters is lowercase
+ * @param c - The character to check
  *@Return 1 if the character is lowercase, 0 otherwise
  */
 
