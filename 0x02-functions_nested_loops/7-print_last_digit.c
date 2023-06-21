@@ -5,14 +5,14 @@
  * Return: value of the last digit
  */
 
-int _abs(int num)
+int print_last_digit(int n)
 {
-	if (num < 0)
-	{
-		return (-num);
-	}
-	else
-	{
-		return (num);
-	}
+	int ld = n % 10;
+
+	if (ld < 0)
+		ld *= -1;
+
+	_putchar(ld + '0');
+
+	return (0);
 }
