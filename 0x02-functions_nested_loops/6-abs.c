@@ -5,14 +5,14 @@
  * @t: the integer to be computer
  * Return: The abslute value
  */
-int _abs(int num)
+int _abs(int c)
 {
-	if (num < 0)
+	if (c < 0)
 	{
-		return (-num);
+	int abs_val;
+	
+	abs_val = c* -1;
+	return (abs_val);
 	}
-	else
-	{
-		return (num);
-	}
+	return (c);
 }
