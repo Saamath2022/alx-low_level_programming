@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * _isdigit - check for the last digit
- * @c: input character
- * Return: (1) if it is true and (0) if it is false
+ * _isdigit - check if parameter is a last digit or character
+ * @c: paramter
+ * Return: (1) if it is a number and (0) if it is false
  */
 
-int _isdigit(int c);
+int _isdigit(int c)
 {
-	if (c == '0' && c == '9')
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}
