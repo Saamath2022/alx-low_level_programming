@@ -3,7 +3,7 @@
 
 /**
  * main - program that prints "Fizz-Buzz test" the number 1 to 100.
- * Return: 0
+ * Return: Always 0 (Success)
  */
 
 int main(void)
