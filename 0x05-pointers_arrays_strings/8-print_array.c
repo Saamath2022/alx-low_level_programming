@@ -4,8 +4,8 @@
  /**
   * print_array - Prints n elements of an array of integers
   * @a: string parameter input
-  * @n: elements parameter input
-  * Return: Nothing
+  * @n: Number of elements of the array to be printed
+  * Return: void
   */
 
 void print_array(int *a, int n)
