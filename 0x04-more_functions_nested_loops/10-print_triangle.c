@@ -1,36 +1,28 @@
 #include "main.h"
-
 /**
- * _atoi - Convert a string to an integer
- * @s: The pointer to convert
- * Return: An integer
+ * print_triangle - prints triangle
+ * @size: size of the triangle
+ * Return: Always 0 (success)
  */
 
-int _atoi(char *s)
+void print_triangle(int size)
 {
-	int c = 0;
-	unsigned int ni = 0;
-	int min = 1;
-	int isi = 0;
+	int hght, base;
 
-	while (s[c])
+	if (size <= 0)
+		_putchar('\n');
+	else
 	{
-	if (s[c] == 45)
-	{
-	min *= -1;
+		for (hght = 1; hght < size; hght++)
+		{
+			for (base = 1; base <= size; base++)
+			{
+				if ((hght + base) <= size)
+					_putchar(' ');
+				else
+					_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
-	while (s[c] >= 48 && s[c] <= 57)
-	{
-	isi = 1;
-	ni = (ni * 10) + (s[c] - '0');
-	c++;
-	}
-	if (isi == 1)
-	{
-	break;
-	}
-	c++;
-	}
-	ni *= min;
-	return (ni);
 }
