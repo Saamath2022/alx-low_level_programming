@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_time_table - prints time table of n
- * @n: takes number input
+ * print_time_table - prints time table of the input
+ * starting with 0.
+ * @n: The value of time table to be printed.
  */
 
 void print_times_table(int n)
@@ -14,7 +15,7 @@ void print_times_table(int n)
 		for (num = 0; num <= n; ++num)
 		{
 			_putchar(48);
-			for(mult = 1; mult <= n; ++mult)
+			for (mult = 1; mult <= n; ++mult)
 			{
 				_putchar(',');
 				_putchar(' ');
