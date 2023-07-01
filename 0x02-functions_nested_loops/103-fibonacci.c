@@ -3,8 +3,8 @@
 
 /**
  * main - Entry  point
- * Description: Prints the first 50 Fibonacci numbers
- *		Strting with 1 and 2 followed by a new line
+ * Description: Prints th sum of even valued fibonacci
+ *		sequence not exceed 4,000,000.
  * Return: Always 0 (Success)
  */
 
