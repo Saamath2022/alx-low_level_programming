@@ -4,27 +4,28 @@
 /**
  * main - Entry  point
  * Description: Prints th sum of even valued fibonacci
- *		sequence not exceed 4,000,000.
+ *		sequence not exceed
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int count:
 	unsigned long fib1 = 0, fib2 = 1, sum;
+	float total_sum;
 
-	for (count = 0; count < 50; count++)
+	while (1)
 	{
 		sum = fib1 + fib2;
-		printf("%lu", sum)
+		if (sum > 4000000)
+			break;
 
-			fib1 = fib2;
+		if ((sum % 2) == 0)
+			total_sum += sum;
+
+		fib1 = fib2;
 		fib2 = sum;
-
-		if (cont == 49)
-			printf("\n");
-		else
-			printf(", ");
 	}
+	printf("%.0f\n", total_sum);
+
 	return (0);
 }
