@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * strcmp: compare pointers to two strings
  * @s1: a pointer to the first string to be comparedd
