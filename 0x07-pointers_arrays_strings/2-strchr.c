@@ -6,8 +6,8 @@
  * @c: Input
  * Return: Always 0 (Success).
  */
-ji
-char *_strchr(char *s, char, char c)
+
+char *_strchr(char *s, char c)
 {
 	int i = 0;
 
