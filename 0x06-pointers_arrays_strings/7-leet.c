@@ -1,32 +1,34 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
 /**
  * leet - encode into 1337 speak
- * @n: input value 
+ * @n: input value
  * Retuen: n value
  */
 
 char *leet(char *str)
 {
-	int length = strlen(str);
+	char *encoded = (char*)malloc(strlen(str) + 1);
+	int i, j;
 
-	for (int i = 0; i < length; i++)
+	for (i = 0, j = 0; str[i] != '\0'; i++)
 	{
 		char c = str[i];
 
-		for ((c == 'a' || c == 'A' || (c == 'e' || c == 'E') || (c == 'o' || c == '0' || (c == 't' || (c == 't' || (c == '1' || c == 'L'))
-	switch (c) 
-	case 'a':
-	case 'A':
-str[i] = '4';
-break
-case 'e':
-case 'E':
-str[i] = '3';
-break;
-case 'o':
-case '0':
-str[i] = '0';
-break;
-case 't':
-case 'T':
-str[i]
+		if (c == 'a' || c == 'A')
+			encoded[j++] = '4';
+		else if (c == 'e' || c == 'E')
+			encoded[j++] = '3';
+		else if (c == 'o' || c == '0')
+			encoded[j++] = '0';
+		else if (c == 't' || c == 'T')
+			encoded[j++] = '7';
+		else if (c == 'l' || c == 'L')
+			encoded[j++] = '1';
+		else
+			encoded[j++] = c;
+	}
+	encoded[j] = '\0';
+	return (encoded);
+}
