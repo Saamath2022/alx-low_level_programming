@@ -2,8 +2,8 @@
 
 /**
  * _put _recursion - prints string in reverse.
- * @s: Paramater of string
- * Return: void
+ * @s: The string to reverse
+ * Return: Nothing
  */
 void _print_rev_recursion(char *s)
 {
