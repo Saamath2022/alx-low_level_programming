@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <math.h>
 
 /**
  * main - check the code
@@ -9,8 +10,9 @@
 int main(void)
 {
 	int r;
+
 	r = factorial(1);
-	rintf("%d\n", r);
+	printf("%d\n", r);
 	r = factorial(5);
 	printf("%d\n", r);
 	r = factorial(10);
