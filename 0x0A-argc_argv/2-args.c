@@ -1,8 +1,9 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <errno.h>
 /**
- * main - Prints all the arguments
+ * main - Entry point for the program
  * @argc: input argument count
  * @argv: input array of vector
  *
