@@ -1,12 +1,11 @@
-#include "main.h"
-#include <stdio.h>
 #include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * main - it all starts here
- * @argc: the number of argument count
- * @argv: array of pointers to arguments
+ *main-Prints the sum of args positive number
+ *@argc: the number of argument count
+ *@argv: array of pointers to arguments
  *
  * return: Always 0.
  */
