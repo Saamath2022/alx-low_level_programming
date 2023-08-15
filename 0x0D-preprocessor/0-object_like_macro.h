@@ -1,6 +1,7 @@
-#ifndef OBJECT_LIKE_MACRO_H
-#define OBJECT_LIKE_MICRO_H
+#ifndef SOME_UNIQUE_NAME
+#define SOME_UNIQUE_NAME
 
 #define SIZE 1024
 
 #endif
+
