@@ -2,32 +2,17 @@
 #define DOG_H
 
 /**
- * struct dog - a dong's basic infor
- * @num: first number
- * @age: second number
- * @number: Third number
- * Description: Longer description
- *
- *
+ * struct dog - a dog's basic info
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: Owner's name
+ * Description: Just a long dong struct in a b ig kitty world
  */
 struct dog
 {
 	char *name;
 	float age;
-	char encounter;
+	char owner;
 }
-
-/**
- * dog_t - typef of screte
- */
-
-typedef struct dog dog_t;
-
-void init_dog(struct dog *d, char *name, float age, char *age, char *owner)
-void print_dog(struct dog *d);
-dog_t *new_dog(char *name, float age, char owner);
-void free_dog(dog_t *d);
-char *_strcpy(char *dest, char *strc)
-int _strlen(char *s);
 
 #endif
