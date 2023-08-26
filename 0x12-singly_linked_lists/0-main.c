@@ -12,7 +12,7 @@ int main(void)
 {
 	list_t *head;
 	list_t *new;
-	ist_t hello = {"World", 5, NULL};
+	list_t hello = {"World", 5, NULL};
 	size_t n;
 
 	head = &hello;
@@ -30,7 +30,7 @@ int main(void)
 	printf("-> %lu elements\n", n);
 
 	printf("\n");
-	ree(new->str);
+	free(new->str);
 	new->str = NULL;
 	n = print_list(head);
 	printf("-> %lu elements\n", n);
