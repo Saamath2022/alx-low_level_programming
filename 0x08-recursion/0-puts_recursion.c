@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <main.h>
+#include "main.h"
 
 /**
  * _puts_recursion - print a string, followed by a new line
@@ -15,7 +15,7 @@ void _puts_recursion(char *s)
 	}
 	else
 	{
-		_putchar('\n');
+		_putchar(*s);
 		_puts_recursion(s + 1);
 	}
 }
