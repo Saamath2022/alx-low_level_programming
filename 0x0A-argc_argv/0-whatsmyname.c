@@ -9,17 +9,8 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc >= 1)
-	{
-		for (int i = 0; argv[0][i] != '\0'; i++)
-		{
-			putchar(argv[0][i]);
-		}
-		putchar('\n');
-	}
-	else
-	{
-		printf("The program name is Learning SE with ALX\n");
-	}
+	(void) argc;
+	printf("%s\n", argv[0];
+
 	return (0);
 }
