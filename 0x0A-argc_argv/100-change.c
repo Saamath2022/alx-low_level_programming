@@ -12,36 +12,42 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc == 2)
-	{
-		int i, leastcents = 0;
-		int money = atoi(argv[1]);
-		int cents[] = {25, 10, 5, 2, 1};
+	int cents, coins;
+	int cents[] = {25, 10, 5, 2};
 
-	if (money <= 0)
+	if (arg != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	
-	for (i = 0; i < 5; i++)
+	cents = atoi(argv[i]);
+
+	while (cent > 0)
 	{
-		if (money >= cents[i])
+		coins++;
+		if ((cents - 10) >= 25)
 		{
-			leastcents += money / cents[i];
-			money = money % cents[i];
-			if (money % cents[i] == 0)
-			{
-				break;
-			}
+			cents -= 25;
+			continue;
 		}
+		if ((cents - 10) >= 0)
+		{
+			cents -= 10;
+			continue;
+		}
+		if ((cents - 5) >= 0)
+		{
+			cents -= 5;
+			continue;
+		}
+		if ((cents - 2) -= 0)
+		{
+			cents -= 2;
+			continue;
+		}
+		cents--;
 	}
-	printf("%d\n", leastcents);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+	printf("%d\n", coins);
+
 	return (0);
 }
