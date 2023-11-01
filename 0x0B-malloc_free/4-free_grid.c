@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
-
+#include <stdio.h>
 
 /**
  * free_grid - write a function that frees 2D grid created by our alloc_grid
