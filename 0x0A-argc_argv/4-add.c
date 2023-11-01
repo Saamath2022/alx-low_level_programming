@@ -12,10 +12,5 @@
 
 int main(int argc, char *argv[])
 {
-	int j;
-	unsigned int u, sum = 0;
-	char *e;
 
-	if (argc > 1)
-	{
-		for (
+
