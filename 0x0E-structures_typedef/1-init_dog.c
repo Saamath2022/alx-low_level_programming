@@ -6,16 +6,18 @@
  * @d: pointer to struct dog
  * @name: name to be initialized
  * @age: age to inititialized
- * @owner: the do's owner
+ * @owner: the do's owneri
+ *
+ * Return: Always 0.
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d)
 	{
-		d->name = strcpy(name);
+		d->name = name;
 		d->age = age;
-		d->owner = strcpy(owner);
+		d->owner = owner;
 
 	}
 }
