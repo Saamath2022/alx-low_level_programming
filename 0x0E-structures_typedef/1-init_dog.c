@@ -1,10 +1,9 @@
-#include <stdio.h>
 #include <dog.h>
 
 /**
  * init_dog - Initialize a dog structure
  * @d: pointer to struct dog
- * @name: name to be initialized
+ * @name: a dog's name to be initialized
  * @age: age to inititialized
  * @owner: the do's owneri
  *
