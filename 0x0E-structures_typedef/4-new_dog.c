@@ -3,7 +3,7 @@
 
 /**
  * _strlen - a function that gets a length of string
- * @str: the string to get the length
+ * @str: the string to get ithe length
  * Return: length of @str
  */
 
@@ -17,9 +17,9 @@ int _strlen(const char *str)
 }
 
 /**
- * _strcopy - a function that return a string
- * @src: string to copy
- * @dest: copy string to here
+ * _strcopy - a function that return @dest with a copy of a string
+ * @src: string to copied
+ * @dest: to copy a string
  *
  * Return: @dest
  */
