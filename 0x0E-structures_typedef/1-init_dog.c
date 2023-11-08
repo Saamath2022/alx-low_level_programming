@@ -11,11 +11,11 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	if (d != NULL)
+	if (d)
 	{
-		d->name = strdup(name);
+		d->name = strcpy(name);
 		d->age = age;
-		d->owner = strdup(owner);
+		d->owner = strcpy(owner);
 
 	}
 }
