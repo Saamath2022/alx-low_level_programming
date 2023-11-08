@@ -1,22 +1,17 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 /**
- * free_dog - free your dogs
- * @d: your dog
- *
- * Return: void
+ * free_dog - free memory allocated for a dog structrue
+ * @d: struct of a dog to be freed
  */
 
 void free_dog(dog_t *d)
 {
 	if (d)
 	{
-		if (d->name)
-			free(d->name);
-		if (d->owner)
-			free(d->owner)
+		free(d->name);
+		free(d->owner);
 		free(d);
 	}
 }
-
