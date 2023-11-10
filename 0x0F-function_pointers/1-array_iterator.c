@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include "function_pointers.h"
+#include <stdio.h>
 
 /**
- * array_iterator - Provide a function that executives
- * a function given as a parameter of each element of an array
+ * array_iterator - Provide a function pointer that executives an array
  * @array: pointer to the array to be executed
  * @action: Pointer to a function to each element
  * @size: size of the array
@@ -12,12 +12,10 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	int i;
+	int *end = array + size - 1;
 
 	if (array == NULL || action == NULL)
-		return;
-
-	for (i = 0; i < size; i++)
-		action(*array);
+		while (array <= end)
+			action(*array);
 }
 
