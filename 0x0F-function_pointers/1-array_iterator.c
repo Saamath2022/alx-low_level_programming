@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "function_pointers.h"
-#include <stdio.h>
+
 
 /**
  * array_iterator - Provide a function pointer that executives an array
