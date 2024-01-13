@@ -1,43 +1,42 @@
 #include <stdio.h>
 #include <string.h>
-
 /**
- * last_index - Calculate the last index of a string
- * @s: String to be processed
- * Return: The last index of the string
+ * _strlen_recursion - A function to return the length of a string
+ * @s: string
+ * Return: The legth of the string
  */
-
-int last_index(char *s)
+int _strlen_recursion(char *s)
 {
-	if (*s > '\0')
-		return (last_index(s + 1) + 1);
+	if (*s == '\0')
+		return (0);
+	else
+		return (1 + _strlen_recursion(s + 1));
+/**
+ * comparator - compares the string character
+ * @s: the string to compare
+ * @n1: the parameter to be compared
+ * @n2: the parameter to be compared
+ * Return: the value
+ */
+int comparator(char *s, int n1, int n2)
+
+{
+	if (*(s + n1) == *(s + n2))
+	{
+		if (n1 == n2 || n1 == n2 + 1)
+			return (1);
+		return (0 + comparator(s, n1 + 1, n2 - 1));
+	}
 	return (0);
 }
 /**
- * is_palindrome - Check if a string is a palindrome
- * @s: String to be checked
- * Return: 1 if palindrome, 0 otherwise
+ * is_palindrom - string detector
+ * @s: string
+ * Return: 1 otherwise 0.
  */
 int is_palindrome(char *s)
 {
-	int end = last_index(s);
-
-	return (last_index(s, 0, end - 1, end % 2));
-}
-/**
- * check - Helper function to check if a string is a palindrome
- * @s: String to be checked
- * @start: Index moving from left to right
- * @end: Index moving from right to left
- * @mode: 0 or 1 indicating even or odd length
- * Return: 1 if palindrome, 0 otherwise
- */
-int check(char *s, int start, int end, int mode)
-{
-	if ((start == end && mode != 0) || (start == end + 1 && mode == 0))
+	if (*s == '\0')
 		return (1);
-	else if (s[start] != s[end])
-		return (0);
-	else
-		return (check(s, start + 1, end - 1, mode));
+	return (comparator(s, 0, _strlen_recursion(s) - 1));
 }
