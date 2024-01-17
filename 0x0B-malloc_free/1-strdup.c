@@ -6,30 +6,30 @@
  * Return: Always 0.
  */
 
-int main(void)
+char *_strdup(char *str)
 {
 	size_t i, j;
-	char *s;
+	char *strdut;
 
-	if (s == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 	i = 0;
-	while (s[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i++;
 	}
-	s = (char *)malloc(sizeof(char) * (i + 1));
-	if (s == NULL)
+	strdut = (char *)malloc(sizeof(char) * (i + 1));
+	if (strdut == NULL)
 	{
 		return (NULL);
 	}
 	for (j = 0; j <= i; j++)
 	{
-		s[j] = s[j];
+		strdut[j] = strdut[j];
 	}
 
-	return (s);
+	return (strdut);
 }
 
