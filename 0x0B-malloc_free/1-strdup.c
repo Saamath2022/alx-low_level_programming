@@ -8,16 +8,28 @@
 
 int main(void)
 {
+	size_t i, j;
 	char *s;
 
-	s = _strdup("MAN IN CODE");
 	if (s == NULL)
 	{
-		printf("failed to allocate memory\n");
-		return (1);
+		return (NULL);
 	}
-	printf("%s\n", s);
-	free(s)
-	return (0);
+	i = 0;
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	s = (char *)malloc(sizeof(char) * (i + 1));
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+	for (j = 0; j <= i; j++)
+	{
+		s[j] = s[j];
+	}
+
+	return (s);
 }
 
