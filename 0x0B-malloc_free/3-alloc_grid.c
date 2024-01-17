@@ -1,45 +1,40 @@
 #include <stdio.h>
-#include "main.h"
 #include <stdlib.h>
+#include "main.h"
 
 /**
- * alloc_grid - A function that returns 2d arrays
- * @width: The width of array
- * @height: the hight an arry
+ * alloc_grid - Allocates memory for a 2D array and initializes it to 0
+ * @width: The width of the array
+ * @height: The height of the array
  *
- * Return: Always return an integer
+ * Return: Pointer to the allocated 2D array or NULL on failure
  */
 
 int **alloc_grid(int width, int height)
 {
-	int rows = 3;
-	int cols = 4;
+	int **set, i, j;
+	set = malloc(sizeof(*set) * height);
 
-	int myArray[3][4] = {{1, 2, 4, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}};
-
-	int sum = 0;
-
-	for (int i = 0; i < rows; i++)
+	if (width <= 0 || height <= 0)
 	{
-		for (int j = 0; j < cols; j++)
+		return (NULL);
+	}
+	
+	else
+	{
+		for (i = 0; i < height; i++)
 		{
-			sum += myArray[i][i];
+			set[i] = malloc(sizeof(*set) * width);
+			if (set[i] == 0)
+			{
+				while (i--)
+					free(set[i]);
+				free(set);
+				return (NULL);
+			}
+			for (j = 0; j < width; j++)
+				set[i][j] = 0;
 		}
-		return (i);
 	}
-
-	for (int i = 0; i < rows; i++)
-	{
-		for (int j = 0; j < cols; j++)
-		{
-			return (j);
-		}
-		return ('\n');
-	}
-	for (int i = 0; i < rows; i++)
-	{
-		free(myArray[i]);
-	}
-	free(myArray);
+	return (set);
 }
-
