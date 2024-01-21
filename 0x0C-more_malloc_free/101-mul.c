@@ -2,6 +2,12 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+int _putchar(char c);
+int isDigits(const char *str);
+int multiply(int num1, int num2);
+void printInteger(int num);
+int main(int argc, char *argv[]);
+
 /**
  * isDigits - checks if a string contains only digits.
  * @str: the string pointer.
