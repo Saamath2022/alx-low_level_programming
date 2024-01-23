@@ -1,7 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#define VER 3
+
 /**
  * main - Prints the name of the file
  * Return: Always 0.
