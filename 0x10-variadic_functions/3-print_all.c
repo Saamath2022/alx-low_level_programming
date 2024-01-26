@@ -1,9 +1,10 @@
 #include <stdarg.h>
 #include <stdio.h>
+
 /**
  * print_all - Prints formatted arguments based on the format string.
  * @format: The format string specifying types of arguments ('c' for char,
- *          'i' for int, 'f' for float, 's' for string).
+ * 'i' for int, 'f' for float, 's' for string).
  * @...: Variable number of arguments to be printed.
  *
  * Return: No explicit return value. Outputs the formatted
@@ -48,7 +49,7 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 		if (format[i])
-		printf(" , ");
+			printf(", ");
 	}
 	printf("\n");
 	va_end(args);
