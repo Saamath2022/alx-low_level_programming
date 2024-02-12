@@ -40,12 +40,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (bytes_read == -1)
 	{
 		close(file_d);
+		free(buffer);
 		return (0);
 	}
+	close(file_d);
 	bytes_written = write(STDOUT_FILENO, buffer, bytes_read);
 	free(buffer);
 
-	if (bytes_read != bytes_written)
+	if (bytes_read < 0 || (size_t)bytes_written != letters)
 	{
 		return (0);
 	}
