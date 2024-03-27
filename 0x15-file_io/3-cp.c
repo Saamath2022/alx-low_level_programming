@@ -34,7 +34,7 @@ fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR | S_IRGRP 
 	return (99);
 }
 dprintf(1, "Why you should think twice before putting pictures on social media.\n
-		(What you always wanted to know about @Incitatous)\n#PrivacyAware\n");
+		("What you always wanted to know about @Incitatous)\n#PrivacyAware\n");
 while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 {
 	bytes_written = write(fd_to, buffer, bytes_read);
