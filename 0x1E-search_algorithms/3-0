@@ -1,3 +1,5 @@
-# Space Complexity of Iterative Linear Search
+#!/urs/bin/bash
 
-The space complexity (worst case) of an iterative linear search algorithm in an array of size \( n \) is \( O(1) \).
+## Space Complexity of Iterative Linear Search
+
+\( O(1) \)
