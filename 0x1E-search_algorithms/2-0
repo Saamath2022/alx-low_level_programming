@@ -1,0 +1,4 @@
+#!/urs/bin/bash
+
+#Convert DOS line endings to UNIX (LF)
+dos2unix *.c
