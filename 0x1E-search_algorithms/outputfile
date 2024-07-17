@@ -1,0 +1,13 @@
+# Space Complexity of Iterative Linear Search
+
+The space complexity (worst case) of an iterative linear search algorithm in an array of size \( n \) is \( O(1) \).
+
+## Explanation
+
+In an iterative linear search algorithm, the space complexity refers to the amount of memory used by the algorithm in addition to the input array. For a linear search, the algorithm only requires a constant amount of extra space, regardless of the size of the input array. This extra space is used for:
+
+1. **Index Variable:** A single variable (e.g., `i`) to iterate through the array.
+2. **Temporary Storage:** If needed, a temporary variable to store the element currently being checked.
+
+Since these requirements do not grow with the size of the input array, the space complexity is \( O(1) \), meaning it uses a constant amount of space.
+
