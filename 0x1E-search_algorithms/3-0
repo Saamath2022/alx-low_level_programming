@@ -1,5 +1,1 @@
-#!/urs/bin/bash
-
-## Space Complexity of Iterative Linear Search
-
-\( O(1) \)
+O(1)
